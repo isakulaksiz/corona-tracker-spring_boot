@@ -15,7 +15,7 @@
 	<description>covid-19</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>12</java.version>
 	</properties>
 
 	<dependencies>
@@ -27,6 +27,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
