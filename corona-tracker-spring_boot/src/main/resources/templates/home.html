@@ -15,9 +15,14 @@
 <div class="jumbotron">
     <h1 class="display-4" th:text="${totalCases}"></h1>
     <p class="lead">Total cases reported as of today</p>
+    <hr class="my-4">
+    <p>
+        <span>New cases reported yesterday</span>
+        <span th:text="${totalNewCases}"></span>
+    </p>
 </div>
 
-<table>
+<table class="table">
     <tr>
         <th>State</th>
         <th>Country</th>
