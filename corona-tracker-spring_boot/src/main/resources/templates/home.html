@@ -5,11 +5,16 @@
 <head>
     <title>Covid - 19 Tracker</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
+<h1>Covid- 19 Tracker </h1>
 
-<p th:text="${testName}"></p>
+<div class="jumbotron">
+    <h1 class="display-4" th:text="${totalCases}"></h1>
+    <p class="lead">Total cases reported as of today</p>
+</div>
 
 <table>
     <tr>
