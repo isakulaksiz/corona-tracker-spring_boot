@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<div class="container">
 <h1>Covid- 19 Tracker </h1>
 
 <div class="jumbotron">
@@ -21,14 +22,16 @@
         <th>State</th>
         <th>Country</th>
         <th>Total cases </th>
+        <th>Changes since last day </th>
     </tr>
     <tr th:each="locationStat : ${locationStats}">
         <td th:text="${locationStat.state}"></td>
         <td th:text="${locationStat.country}"></td>
         <td th:text="${locationStat.totalCases}"></td>
+        <td th:text="${locationStat.diffFromPrevDay}"></td>
     </tr>
 </table>
-
+</div>
 </body>
 
 </html>
